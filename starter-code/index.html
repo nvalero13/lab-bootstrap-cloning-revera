@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <script
+    defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
@@ -60,15 +61,16 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link"
-                  href="#"
+                  id="navbarDropdownMenuLink"
                   role="button"
-                  data-bs-toggle="dropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
                   aria-expanded="false"
                 >
                   Parent page
-                  <span class="sf-sub-indicator"> »</span>
+                  <span> »</span>
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">Full page</a></li>
                   <li><a class="dropdown-item" href="#">Child page 1</a></li>
                   <li><a class="dropdown-item" href="#">Child page 2</a></li>
@@ -82,7 +84,6 @@
         </div>
       </nav>
     </header>
-
     <div
       id="carouselFade"
       class="carousel slide carousel-fade"
@@ -356,7 +357,7 @@
           </div>
           <div class="col-sm-3 px-2">
             <h6 class="text-uppercase mb-4">Archives</h6>
-            <p class="footer-item pb-2">
+            <p class="footer-item pb-1">
               August 2013
             </p>
           </div>
@@ -381,18 +382,21 @@
     <div class="container-fluid text-bg-dark">
       <div class="container">
         <div class="col-sm-3 py-3 pr-3">
-          <p>Copyright © 2018 Nil Valero Pi - Week 2 | Bootstrap Exercise.</p> 
+          <p>Nil Valero Pi - Week 2 | Bootstrap Exercise.</p> 
         </div>
       </div>
 
     </div>
     </footer>
+   
     <script
+    defer
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
     <script
+    defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
